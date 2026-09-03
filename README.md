@@ -1,22 +1,11 @@
-void setup() {
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);         // this sets up the pins and lets them be used as outputs
-  pinMode(11, OUTPUT); 
-}
+# Arduino Projects Portfolio
 
-void loop() {
-  digitalWrite(13, HIGH); // Turn LED on
-  delay(1000);            // Wait for 1 second
-  digitalWrite(13, LOW);  // Turn LED off
-  delay(1000);            // Wait for 1 second
+## 1. [LED Blink](led_blink.ino)
+My first Arduino project—a simple LED blink circuit.
 
-  digitalWrite(12,HIGH);
-  delay(1000);
-  digitalWrite(12,LOW);
-  delay(1000);
-  
-  digitalWrite(11,HIGH);
-  delay(1000);
-  digitalWrite(11,LOW);
-  delay(1000);
-}
+## 2. [Traffic Light with Pedestrian Button](traffic_light_with_button.ino)
+A traffic light system with a pedestrian crossing button.
+- **Components:** Arduino Uno, 3x LEDs, 3x 220Ω resistors, 1x push button, 1x 10kΩ resistor.
+- **Features:**
+  - Green → Yellow → Red light sequence.
+  - Pedestrian button triggers yellow LED flashing.
