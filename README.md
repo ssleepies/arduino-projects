@@ -1,14 +1,22 @@
-# Arduino LED Blink Project
-My first hardware project! An LED blinking circuit using Arduino Uno.
+void setup() {
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);         // this sets up the pins and lets them be used as outputs
+  pinMode(11, OUTPUT); 
+}
 
-## Components:
-- Arduino Uno
-- 1x LED
-- 1x 220-ohm resistor
+void loop() {
+  digitalWrite(13, HIGH); // Turn LED on
+  delay(1000);            // Wait for 1 second
+  digitalWrite(13, LOW);  // Turn LED off
+  delay(1000);            // Wait for 1 second
 
-## Wiring:
-- LED anode (long leg) → Resistor → Pin 13
-- LED cathode (short leg) → GND
-
-## Code:
-[led_blink.ino](led_blink.ino)
+  digitalWrite(12,HIGH);
+  delay(1000);
+  digitalWrite(12,LOW);
+  delay(1000);
+  
+  digitalWrite(11,HIGH);
+  delay(1000);
+  digitalWrite(11,LOW);
+  delay(1000);
+}
